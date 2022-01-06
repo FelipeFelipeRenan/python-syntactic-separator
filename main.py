@@ -14,9 +14,6 @@ with open(file, "r") as f:
         print(len(re.findall("[ ]{3}[^aA-zA]|[aA-Zz]\n", linha)))
         
         aux += 1
-    print(aux)  
-    print(number)
-    
 
 
 
