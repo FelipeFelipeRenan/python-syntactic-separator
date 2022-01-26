@@ -1,13 +1,13 @@
-def primo -> bool####
+def primo(x) -> bool:
+####
 counter = 1
 ####
 flag = 0
 ####
-while counter <= x####
+while counter <= x:
 ####
 ####
-if x%counter == 0####
-####
+if x%counter == 0:
 ####
 ####
 ####
@@ -30,11 +30,11 @@ return True
 ####
 return False
 
-if __name__ == "__main__"####
+if __name__ == "__main__":
+####
 n = int(input("Digite o numero: "))
 ####
-if primo####
-####
+if primo(n):
 ####
 ####
 print("Primo")
