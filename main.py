@@ -17,11 +17,17 @@ with open(file, "r") as f, open("out.txt", "w+") as fAux:
         number = len(re.findall("[  ] ", linha))
         n =  len(re.findall("[ ]{3}[^aA-zA]|[aA-Zz]\n", linha))
         
-        if(re.search("\)", linha)):
-            linhasAux = re.sub("\)", "\n####\n)", linha)
-        
-            fAux.write(f"{linhasAux}")
+
+        if(re.search("\(", linha)):
+            linhasAux = re.sub("\(", f"(\n####\n", linha)
+            if(re.search("\)", linhasAux)):
+                linhasAux = re.sub("\)", "\n####\n)", linhasAux)
+                fAux.write(f"{linhasAux}")
+                continue
+                
+            fAux.write(f"{linhasAux}")        
             continue
+    
         if n >= aux:
 
             linhaMaior = re.sub("[ ]{2,1000}[^aA-zZ]|\([aA-zZ]\)\n", "####\n" * n, linha )

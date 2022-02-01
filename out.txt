@@ -1,4 +1,6 @@
-def primo(x
+def primo(
+####
+x
 ####
 ) -> bool:
 ####
@@ -33,19 +35,29 @@ return True
 return False
 
 if __name__ == "__main__":
-    n = int(input("Digite o numero: "
+    n = int(
+####
+input(
+####
+"Digite o numero: "
 ####
 )
 ####
 )
-    if primo(n
+    if primo(
+####
+n
 ####
 ):
-        print("Primo"
+        print(
+####
+"Primo"
 ####
 )
     else:
-        print("Não primo"
+        print(
+####
+"Não primo"
 ####
 )
 
