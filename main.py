@@ -22,10 +22,9 @@ with open(file, "r") as f, open("out.txt", "w+") as fAux:
             linhasAux = re.sub("\(", "\n####\n(\n####\n", linha)
             if(re.search("\)", linhasAux)):
                 linhasAux = re.sub("\)", "\n####\n)\n####\n", linhasAux)
-                
                 if(re.search(":\n", linhasAux)):
                     print("OPA")
-                    linhasAux = re.sub(":\n", "\n####\n:\n####\n)", linhasAux)
+                    linhasAux = re.sub(":\n", "\n####\n:\n####\n", linhasAux)
                     fAux.write(f"{linhasAux}")
                     continue
                 
@@ -34,7 +33,7 @@ with open(file, "r") as f, open("out.txt", "w+") as fAux:
     
         if n >= aux:
 
-            linhaMaior = re.sub("[ ]{2,1000}[^aA-zZ]|\([aA-zZ]\)\n", "####\n" * n, linha )
+            linhaMaior = re.sub("[ ]{2,1000}[^aA-zZ]", "####" * n, linha )
      
             fAux.write(f"{linhaMaior}")
             continue
@@ -64,3 +63,4 @@ with open(file, "r") as f, open("out.txt", "w+") as fAux:
 '''
 #[ ]{2,1000}[^aA-zA]|[aA-Zz]\n
 #[ ]{2,1000}[^aA-zZ]|[$aA-zZ]:
+#[ ]{2,1000}[^aA-zA]|[aA-Zz]\n

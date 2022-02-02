@@ -19,4 +19,3 @@ if __name__ == "__main__":
     else:
         print("Não primo")
 
-        #[ ]{2,1000}[^aA-zA]|[aA-Zz]\n
