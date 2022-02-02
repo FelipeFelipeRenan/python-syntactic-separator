@@ -1,9 +1,16 @@
-def primo(
+def primo
+####
+(
 ####
 x
 ####
-) -> bool:
+)
 ####
+ -> bool
+####
+:
+####
+)####
 counter = 1
 ####
 flag = 0
@@ -35,31 +42,54 @@ return True
 return False
 
 if __name__ == "__main__":
-    n = int(
+    n = int
 ####
-input(
+(
+####
+input
+####
+(
 ####
 "Digite o numero: "
 ####
 )
 ####
+
+####
 )
-    if primo(
+####
+
+    if primo
+####
+(
 ####
 n
 ####
-):
-        print(
+)
+####
+
+####
+:
+####
+)        print
+####
+(
 ####
 "Primo"
 ####
 )
+####
+
     else:
-        print(
+        print
+####
+(
 ####
 "Não primo"
 ####
 )
+####
+
 
 ####
 ####
