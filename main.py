@@ -40,29 +40,3 @@ with open(file, "r") as f, open("out.txt", "w+") as fAux:
             fAux.write(f"{linhaMaior}")
             continue
         fAux.write(f"{linha}")
-
-        
-"""
-
-        """
-
-        
-'''
-    for linha in linhas2:
-        
-        
-        fAux.write(f"{linhasAux}") 
-    
-    for linha in linhas2:
-        
-        linhasAux = re.sub("\([aA-zZ]{0,100}", "####\n", linha)
-        fAux.write(f"{linhasAux}")
-    
-    for linha in linhas2:
-        
-        linhasAux = re.sub("[aA-zZ]{0,100}\)", "####\n", linha)
-        fAux.write(f"{linhasAux}")
-'''
-#[ ]{2,1000}[^aA-zA]|[aA-Zz]\n
-#[ ]{2,1000}[^aA-zZ]|[$aA-zZ]:
-#[ ]{2,1000}[^aA-zA]|[aA-Zz]\n
