@@ -1,6 +1,8 @@
 import re
+import sys
+file = sys.argv[1:].pop()
 
-file = "teste.py"
+
 linhas = []
 linhas2 = []
 
