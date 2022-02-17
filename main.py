@@ -1,5 +1,6 @@
 import re
 import sys
+
 file = sys.argv[1:].pop()
 
 
@@ -21,7 +22,23 @@ with open(file, "r") as f, open("out.txt", "w+") as fAux:
         aux = n
         number = len(re.findall("[  ] ", linha))
         n =  len(re.findall("[ ]{3}[^aA-zA]|[aA-Zz]\n", linha))
+
+    
+        if n < aux:
+            print(count)
+            numeroLinha.append(count)
+
+            linhaMaior = re.sub("[ ]{2,1000}[^aA-zZ]", "####" * n, linha )
+     
+            fAux.write(f"{linhaMaior}")
+            continue
+        fAux.write(f"{linha}")
+    print(count)
+
+
         
+'''
+    SEPARADORES 
 
         if(re.search("\(", linha)):
             linhasAux = re.sub("\(", "\n####(\n####\n", linha)
@@ -35,14 +52,4 @@ with open(file, "r") as f, open("out.txt", "w+") as fAux:
                 
             fAux.write(f"{linhasAux}")        
             continue
-    
-        if n < aux:
-            print(count)
-            numeroLinha.append(count)
-
-            linhaMaior = re.sub("[ ]{2,1000}[^aA-zZ]", "####" * n, linha )
-     
-            fAux.write(f"{linhaMaior}")
-            continue
-        fAux.write(f"{linha}")
-    print(count)
+        '''

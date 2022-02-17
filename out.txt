@@ -1,12 +1,4 @@
-def primo
-####(
-####
-x
-####)
-####
- -> bool
-####:
-####
+def primo(x) -> bool:
     counter = 1
     flag = 0
     while counter <= x:
@@ -21,41 +13,9 @@ x
         return False
 
 if __name__ == "__main__":
-    n = int
-####(
-####
-input
-####(
-####
-"Digite o numero: "
-####)
-####
-
-####)
-####
-
-    if primo
-####(
-####
-n
-####)
-####
-
-####:
-####
-        print
-####(
-####
-"Primo"
-####)
-####
-
+    n = int(input("Digite o numero: "))
+    if primo(n):
+        print("Primo")
 ####else:
-        print
-####(
-####
-"Não primo"
-####)
-####
-
+        print("Não primo")
 
