@@ -1,0 +1,1 @@
+python3 teste.py param1 param2 param3 >> csdiff.sh
