@@ -1,4 +1,4 @@
-def primo(num) -> int:
+def verificar_primo(num) -> int:
     counter = 1
     flag = 0
     while counter <= num:
@@ -14,7 +14,7 @@ def primo(num) -> int:
 
 if __name__ == "__main__":
     n = int(input("Digite o numero: "))
-    if primo(n):
+    if verificar_primo(n):
         print("Primo")
     else:
         print("Não primo")

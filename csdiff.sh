@@ -154,4 +154,4 @@ diff3 -E -m ${myFile} ${oldFile} ${yourFile} > "${parentFolder}/diff3${fileExt}"
 git merge-file -p --diff3 ${myFile} ${oldFile} ${yourFile} > "${parentFolder}/git_merge${fileExt}"
 
 # Remove the merged file, since we already saved it
-rm $mergedFile
+rm $mergedFileDigite o numero: 
