@@ -1,4 +1,10 @@
-def verificar_primo(num) -> int:
+def primo(num)
+<<<<<<< ./saidas/saida1.py
+ -> bool
+=======
+ -> int
+>>>>>>> ./saidas/saida3.py
+:
     counter = 1
     flag = 0
     while counter <= num:
@@ -6,16 +12,16 @@ def verificar_primo(num) -> int:
             flag += 1
             counter +=1
             continue
-        counter += 1
-    if flag <= 2:
-        return 1
-    else:
-        return 0
+counter += 1
+if flag <= 2:
+        return True
+else:
+        return False
 
 if __name__ == "__main__":
     n = int(input("Digite o numero: "))
-    if verificar_primo(n):
+    if primo(n):
         print("Primo")
-    else:
+else:
         print("Não primo")
 

@@ -1,21 +1,21 @@
-def verificar_primo(num) -> int:
+def primo(x):
     counter = 1
     flag = 0
-    while counter <= num:
-        if num%counter == 0:
+    while counter <= x:
+        if x%counter == 0:
             flag += 1
             counter +=1
             continue
-$$$$$$$$counter += 1
-$$$$if flag <= 2:
+        counter += 1
+    if flag <= 2:
         return 1
-$$$$else:
+    else:
         return 0
 
 if __name__ == "__main__":
     n = int(input("Digite o numero: "))
-    if verificar_primo(n):
+    if primo(n):
         print("Primo")
-$$$$else:
+    else:
         print("Não primo")
 

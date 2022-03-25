@@ -33,7 +33,7 @@ with open( file1, "r") as f, open("out.py", "w+") as fAux:
         if n < aux:
             
             numeroLinha.append(count)
-            linhaMaior = re.sub("[ ]{2,1000}[^aA-zZ]", "$$$$" * n, linha )
+            linhaMaior = re.sub("[ ]{2,1000}[^aA-zZ]", "$$$$$$$\n", linha )
  
             fAux.write(f"{linhaMaior}")
             print(linhaMaior, end="")

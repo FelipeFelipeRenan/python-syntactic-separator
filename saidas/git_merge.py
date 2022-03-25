@@ -1,4 +1,10 @@
+<<<<<<< ./saidas/saida1.py
+def primo(x) -> bool:
+||||||| ./saidas/saida2.py
+def primo(x):
+=======
 def primo(num) -> int:
+>>>>>>> ./saidas/saida3.py
     counter = 1
     flag = 0
     while counter <= num:
@@ -10,10 +16,10 @@ $$$$$$$
 counter += 1
 $$$$$$$
 if flag <= 2:
-        return 1
+        return True
 $$$$$$$
 else:
-        return 0
+        return False
 
 if __name__ == "__main__":
     n = int(input("Digite o numero: "))

@@ -6,20 +6,16 @@ def primo(num) -> int:
             flag += 1
             counter +=1
             continue
-$$$$$$$
-counter += 1
-$$$$$$$
-if flag <= 2:
+        counter += 1
+    if flag <= 2:
         return 1
-$$$$$$$
-else:
+    else:
         return 0
 
 if __name__ == "__main__":
     n = int(input("Digite o numero: "))
     if primo(n):
         print("Primo")
-$$$$$$$
-else:
+    else:
         print("Não primo")
 

@@ -1,8 +1,8 @@
-def primo(num) -> int:
+def primo(x):
     counter = 1
     flag = 0
-    while counter <= num:
-        if num%counter == 0:
+    while counter <= x:
+        if x%counter == 0:
             flag += 1
             counter +=1
             continue
